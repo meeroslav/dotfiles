@@ -1,0 +1,104 @@
+{
+  "editor.fontFamily": "MonoLisa, monospace",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "files.exclude": {
+    ".docker": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "dist": true,
+    "tmp": true,
+    "coverage": true,
+    "coverage_js": true
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "files.watcherExclude": {
+    "dist/**": true,
+    "tmp/**": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.fontLigatures": true,
+  "editor.scrollBeyondLastLine": false,
+  "files.trimTrailingWhitespace": true,
+  "workbench.editor.enablePreview": false,
+  "editor.fontWeight": "500",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "html.format.wrapLineLength": 0,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "files.autoSave": "onFocusChange",
+  "html.format.wrapAttributes": "preserve-aligned",
+  "editor.renderWhitespace": "all",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
+    "editor.defaultFormatter": "vscode.markdown-language-features"
+  },
+  "[mdx]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
+  },
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "window.newWindowDimensions": "inherit",
+  "window.openFoldersInNewWindow": "on",
+  "window.openFilesInNewWindow": "on",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "svg.preview.mode": "svg",
+  "terminal.integrated.scrollback": 30000,
+  "[shellscript]": {
+    "files.eol": "\n"
+  },
+  "editor.accessibilitySupport": "off",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "git.mergeEditor": false,
+  "grammarly.files.include": [
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt",
+    "**/*.md"
+  ],
+  "grammarly.addWord": ["unsplash", "monorepo", "nx"],
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
+  "window.zoomLevel": 1,
+  "nxConsole.showNodeVersionOnStartup": false,
+  "yaml.schemas": {
+
+  }
+}
