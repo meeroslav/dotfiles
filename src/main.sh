@@ -20,10 +20,15 @@ main() {
 
     ask_for_sudo
 
-    if [ "${SHELL##/*/}" != "zsh" ]; then
-        chsh -s /bin/zsh || exit 1
-        print_in_purple "\n • Shell set to ZSH\n\n"
-    fi
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    ./installs/main.sh
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    ./preferences/main.sh
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     ./restart.sh
 }

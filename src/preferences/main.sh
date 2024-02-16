@@ -26,3 +26,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 ./textedit.sh
 ./trackpad.sh
 ./ui_and_ux.sh
+./vscode/main.sh
+./zsh.sh

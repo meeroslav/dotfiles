@@ -9,8 +9,14 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n   Miscellaneous\n\n"
 
 brew_install "VLC" "vlc" "--cask"
+brew_install "Spotify" "spotify" "--cask"
 brew_install "Yarn" "yarn"
 brew_install "ShellCheck" "shellcheck"
+brew_install "Obsidian" "obsidian" "--cask"
+brew_install "Notion Calendar" "notion-calendar" "--cask"
+brew_install "OpenSSH" "openssh"
+brew_install "woff2" "woff2"
+brew_install "Bat" "bat"
 
 BREW_PREFIX=$(brew --prefix)
 
@@ -18,7 +24,3 @@ BREW_PREFIX=$(brew --prefix)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew_install "Coreutils" "coreutils"
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
-
-brew_install "OpenSSH" "openssh"
-brew_install "woff2" "woff2"
-brew_install "Bat" "bat"
