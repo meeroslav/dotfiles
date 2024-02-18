@@ -20,6 +20,7 @@ export PATH="$PNPM_HOME:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Aliases
+alias g="git"
 alias ghf='git add -A && git commit --amend --no-edit && git push --force'
 alias yanr='yarn'
 

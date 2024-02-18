@@ -28,3 +28,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 ./ui_and_ux.sh
 ./vscode/main.sh
 ./zsh/main.sh
+./git/main.sh

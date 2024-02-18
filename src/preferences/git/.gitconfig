@@ -1,0 +1,40 @@
+[user]
+  email = missing.manual@gmail.com
+  name = Miroslav Jonas
+
+[github]
+  user = meeroslav
+
+[help]
+  # If a command is mistyped, make Git automatically
+  # run the command it thinks the user wanted to type.
+  autoCorrect = immediate
+
+[pretty]
+  custom = "%C(magenta)%h%C(red)%d %C(yellow)%ar %C(green)%s %C(yellow)(%an)"
+  #                     │        │            │            │             └─ author name
+  #                     │        │            │            └─ message
+  #                     │        │            └─ date (relative)
+  #                     │        └─ decorations (branch, heads or tags)
+  #                     └─ hash (abbreviated)
+
+[alias]
+  discard = reset --hard HEAD
+
+  summary   = !zsh "$HOME/Dev/dotfiles/src/preferences/git/extras/git-summary.sh"
+  cleanup = !ruby "$HOME/Dev/dotfiles/src/preferences/git/extras/git-cleanup.rb"
+
+  # Undo last commits (by default it undoes the last commit).
+  undo = "!f() { \
+      number_of_commits=\"${1:-1}\"; \
+      git reset --soft \"HEAD~$number_of_commits\"; \
+  }; f"
+
+[color]
+  ui = true
+
+[init]
+	defaultBranch = main
+
+[merge]
+	conflictstyle = diff3
