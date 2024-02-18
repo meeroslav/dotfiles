@@ -17,6 +17,10 @@ brew_install "Notion Calendar" "notion-calendar" "--cask"
 brew_install "OpenSSH" "openssh"
 brew_install "woff2" "woff2"
 brew_install "Bat" "bat"
+brew_install "Warp" "warp" "--cask"
+brew_install "Discord" "discord" "--cask"
+brew_install "Craft" "craft" "--cask"
+brew_install "Commander One" "commander-one" "--cask"
 
 BREW_PREFIX=$(brew --prefix)
 

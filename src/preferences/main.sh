@@ -27,4 +27,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 ./trackpad.sh
 ./ui_and_ux.sh
 ./vscode/main.sh
-./zsh.sh
+./zsh/main.sh
