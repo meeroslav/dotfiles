@@ -8,9 +8,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n • Installs\n\n"
 
-./installs/xcode.sh
-./installs/homebrew.sh
-./installs/bash.sh
+./xcode.sh
+./homebrew.sh
+./bash.sh
 
 ./git.sh
 ./browsers.sh
