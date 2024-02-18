@@ -10,6 +10,7 @@ print_in_purple "\n   Miscellaneous\n\n"
 
 brew_install "VLC" "vlc" "--cask"
 brew_install "Spotify" "spotify" "--cask"
+brew_install "nvm" "nvm"
 brew_install "Yarn" "yarn"
 brew_install "ShellCheck" "shellcheck"
 brew_install "Obsidian" "obsidian" "--cask"

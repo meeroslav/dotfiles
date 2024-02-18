@@ -7,13 +7,17 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 export NODE_PATH="/usr/local/lib/node_modules"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-15.0.1.jdk/Contents/Home"
-export PATH=/opt/homebrew/bin:$HOME/bin:/opt/local/bin:/usr/local/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.6.0/bin:/bin:$PATH
+export PNPM_HOME="$HOME/Library/pnpm"
+# add rust to path
+export PATH="$HOME/.cargo/bin:$PATH"
+# add brew and local bins to path
+export PATH="/opt/homebrew/bin:$HOME/bin:/opt/local/bin:/usr/local/bin:/bin:$PATH"
+# add yarn to path
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
-  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
+# add pnpm to path
+export PATH="$PNPM_HOME:$PATH"
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
 # Aliases
 alias ghf='git add -A && git commit --amend --no-edit && git push --force'
@@ -41,21 +45,5 @@ source $ZSH/oh-my-zsh.sh
 
 DEFAULT_USER=`whoami`
 
-###-tns-completion-start-###
-if [ -f /Users/miro/.tnsrc ]; then
-    source /Users/miro/.tnsrc
-fi
-###-tns-completion-end-###
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-eval "$(rbenv init - zsh)"
-
-# pnpm
-export PNPM_HOME="/Users/miro/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end

@@ -97,8 +97,5 @@
   "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "vscode-icons",
   "window.zoomLevel": 1,
-  "nxConsole.showNodeVersionOnStartup": false,
-  "yaml.schemas": {
-
-  }
+  "nxConsole.showNodeVersionOnStartup": false
 }

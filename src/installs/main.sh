@@ -17,6 +17,7 @@ print_in_purple "\n • Installs\n\n"
 ./compression_tools.sh
 
 ./misc.sh
+./npm.sh
 ./vscode.sh
 
 ./../npm.sh
