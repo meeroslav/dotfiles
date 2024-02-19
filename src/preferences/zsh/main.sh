@@ -11,6 +11,8 @@ if [ "${SHELL##/*/}" != "zsh" ]; then
     chsh -s /bin/zsh || exit 1
 fi
 
+ask_for_sudo
+
 execute \
     "sudo curl -fsSL https://raw.githubusercontent.com/JGroxz/presto-prezto/main/presto-prezto.sh | bash -s -- --font" \
     "Install Zsh and Prezto"
