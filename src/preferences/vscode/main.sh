@@ -7,4 +7,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   VS Code\n\n"
 
-cp -rf ./settings.json ~/Library/Application\ Support/Code/User/settings.json
+execute "cp -rf ./settings.json ~/Library/Application\ Support/Code/User/settings.json" \
+    "Copy settings.json to VS Code"
