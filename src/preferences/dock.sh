@@ -62,4 +62,9 @@ execute "defaults write com.apple.dock wvous-bl-corner -int 0" \
 execute "defaults write com.apple.dock wvous-br-corner -int 0" \
     "Disable bottom right hot corner"
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+execute "./remove_items_from_dock.applescript" \
+    "Remove items from dock"
+
 killall "Dock" &> /dev/null
