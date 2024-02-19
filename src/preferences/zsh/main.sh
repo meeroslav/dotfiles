@@ -12,5 +12,5 @@ if [ "${SHELL##/*/}" != "zsh" ]; then
 fi
 
 execute \
-    "curl -fsSL https://raw.githubusercontent.com/JGroxz/presto-prezto/main/presto-prezto.sh | bash -s -- --font" \
+    "sudo curl -fsSL https://raw.githubusercontent.com/JGroxz/presto-prezto/main/presto-prezto.sh | bash -s -- --font" \
     "Install Zsh and Prezto"

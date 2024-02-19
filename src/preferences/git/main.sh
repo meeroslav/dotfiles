@@ -7,4 +7,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Git\n\n"
 
-cp -rf ./.gitconfig ~/.gitconfig
+execute "cp -rf ./.gitconfig ~/.gitconfig" "Copy .gitconfig to home directory"
