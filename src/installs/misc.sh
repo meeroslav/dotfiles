@@ -23,9 +23,6 @@ brew_install "Discord" "discord" "--cask"
 brew_install "Craft" "craft" "--cask"
 brew_install "Commander One" "commander-one" "--cask"
 
-BREW_PREFIX=$(brew --prefix)
-
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew_install "Coreutils" "coreutils"
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
