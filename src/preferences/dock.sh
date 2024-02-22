@@ -47,7 +47,7 @@ execute "defaults write com.apple.dock show-recents -bool false" \
 execute "defaults write com.apple.dock showhidden -bool true" \
     "Make icons of hidden applications translucent"
 
-execute "defaults write com.apple.dock tilesize -int 60" \
+execute "defaults write com.apple.dock tilesize -int 48" \
     "Set icon size"
 
 execute "defaults write com.apple.dock wvous-tr-corner -int 0" \
@@ -64,7 +64,7 @@ execute "defaults write com.apple.dock wvous-br-corner -int 0" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-execute "./remove_items_from_dock.applescript" \
-    "Remove items from dock"
+# execute "./remove_items_from_dock.applescript" \
+#     "Remove items from dock"
 
 killall "Dock" &> /dev/null

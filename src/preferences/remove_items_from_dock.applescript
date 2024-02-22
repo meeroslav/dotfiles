@@ -1,6 +1,6 @@
 #!/usr/bin/osascript
 
-set dockList to {"Launchpad", "Safari", "Maps", "Photos", "FaceTime", "Contacts", "TV", "Music", "Freeform", "Keynote", "Numbers", "Pages", "App Store", "System Settings"}
+set dockList to {"Safari", "Maps", "Photos", "FaceTime", "Contacts", "TV", "Music", "Freeform", "Keynote", "Numbers", "Pages", "App Store", "System Settings"}
 
 repeat with thisRecord in dockList
     tell application "System Events"
