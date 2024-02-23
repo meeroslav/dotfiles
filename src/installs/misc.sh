@@ -26,6 +26,8 @@ brew_install "Zoom" "zoom" "--cask"
 brew_install "Commander One" "commander-one" "--cask"
 brew_install "Dropbox" "dropbox" "--cask"
 brew_install "Slack" "slack" "--cask"
+brew_install "Docker" "docker" "--cask"
+brew_install "Loom" "loom" "--cask"
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
