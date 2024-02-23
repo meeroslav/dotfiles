@@ -19,3 +19,6 @@ execute \
 
 execute "cp -rf ./.zshrc ~/.zshrc" \
     "Copy .zshrc to home directory"
+
+execute "cp -rf ./.p10k.zsh ~/.p10k.zsh" \
+    "Copy .p10k config to home directory"
