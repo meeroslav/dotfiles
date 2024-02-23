@@ -6,17 +6,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-print_in_purple "\n • Installs\n\n"
+print_in_purple "\n   Rust\n\n"
 
-./xcode.sh
-./homebrew.sh
-./bash.sh
-
-./git.sh
-./rust.sh
-./browsers.sh
-./compression_tools.sh
-
-./misc.sh
-./npm.sh
-./vscode.sh
+execute \
+    "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh" \
+    "Install Rust"
