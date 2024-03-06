@@ -57,6 +57,7 @@ export PATH="$PNPM_HOME:$PATH"
 # ---------------------------------------------------------------------------------------
 # Aliases
 alias g="git"
+alias ga="git add -A && git commit --amend --no-edit"
 alias ghf='git add -A && git commit --amend --no-edit && git push --force'
 alias yanr='yarn'
 
