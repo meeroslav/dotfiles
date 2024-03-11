@@ -60,6 +60,9 @@ alias g="git"
 alias ga="git add -A && git commit --amend --no-edit"
 alias ghf='git add -A && git commit --amend --no-edit && git push --force'
 alias yanr='yarn'
+function ghcheck() {
+    gh pr checkout $1
+}
 function pkill() {
     lsof -ti tcp:$1 | xargs kill -9
 }
